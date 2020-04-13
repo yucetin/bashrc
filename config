@@ -55,7 +55,7 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # ALIASES
 #-----------
 
-alias ll='ls -alF'
+alias ll='ls -lhrt'
 alias la='ls -A'
 alias l='ls -CF'
 alias cp='cp -i'
@@ -67,6 +67,9 @@ alias j='jobs -l'
 alias r='rlogin'
 alias which='type -all'
 alias ..='cd ..'
+alias ...='cd ../..'
+alias l.='ls -d .*'     #list hidden files
+alias lss='l --color=always | less'   #colored "l" with less
 alias path='echo -e ${PATH//:/\\n}'
 alias du='du -kh'
 alias df='df -kTh'
